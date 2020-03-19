@@ -37,9 +37,24 @@ class Story:
 
 # Here's a story to get you started
 
-
 story = Story(
     ["place", "noun", "verb", "adjective", "plural_noun"],
     """Once upon a time in a long-ago {place}, there lived a
        large {adjective} {noun}. It loved to {verb} {plural_noun}."""
 )
+
+story2 = Story(
+    ["noun", "adjective", "verb", "adverb", "noun2"],
+    """ We can always pretend to be a bloodthirsty {noun}, threatening
+    everyone by waving yer {adjective} sword in the air, but until ye
+    learn to {verb} like a pirate, ye'll never be {adverb} accepted
+    as an authentic {noun2}. """)
+
+story3 = Story(
+    ['adjective1', 'color1', 'color2', 'adjective2'],
+    """ The Grinch is a(n) {adjective1} {color1} creature with
+    {color2} eyes who does not like Christmas cheer. When he sees
+    people celebrating Christmas, it makes him {adjective2}.""")
+
+
+storybook = [story, story2, story3]

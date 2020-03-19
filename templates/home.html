@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Choose Your Story {% endblock %}
+{% block body %}
+<!-- selector for stories in storybook -->
+<label for=""> Choose a story</label>
+<form action="/forms" method="post">
+
+    <select name="chooser" id="story-choice">
+        {% for num in range(3) %}
+        <option value="{{num}}">{{num}}</option>
+        {% endfor %}
+    </select>
+    
+    <button>Pick</button>
+</form>
+{% endblock %}
